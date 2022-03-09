@@ -1,0 +1,87 @@
+.picker {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  &__scroll-container {
+    height: 180px;
+    width: 130px;
+    overflow-y: scroll;
+    z-index: 1000;
+  }
+
+  &__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  &__control {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1em;
+    color: green;
+  }
+
+  &__item {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1em;
+    color: black;
+  }
+
+  &__selection-border {
+    z-index: 1200;
+    position: absolute;
+    width: 130px;
+    left: 0;
+    height: 2px;
+    background: green;
+
+    &_top {
+      top: 60px;
+    }
+
+    &_bottom {
+      bottom: 60px;
+    }
+  }
+
+  &__scroll-overlay {
+    position: absolute;
+    width: 40px;
+    height: 180px;
+    background: #ffffff;
+    z-index: 1100;
+
+    &_left {
+      left: 0;
+      top: 0;
+    }
+
+    &_right {
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    height: 180px;
+    width: 130px;
+  }
+}

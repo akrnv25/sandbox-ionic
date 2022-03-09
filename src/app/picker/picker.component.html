@@ -1,0 +1,15 @@
+<div class="picker">
+  <div class="picker__control" (click)="switchItem('prev')">Prev</div>
+  <div class="picker__wrapper">
+    <div class="picker__selection-border picker__selection-border_top"></div>
+    <div class="picker__selection-border picker__selection-border_bottom"></div>
+    <div class="picker__scroll-overlay picker__scroll-overlay_left"></div>
+    <div class="picker__scroll-overlay picker__scroll-overlay_right"></div>
+    <div class="picker__scroll-container" #scrollContainer>
+      <div class="picker__container">
+        <div class="picker__item" *ngFor="let item of items">{{item}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="picker__control" (click)="switchItem('next')">Next</div>
+</div>
