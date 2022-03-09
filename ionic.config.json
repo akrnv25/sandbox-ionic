@@ -1,0 +1,8 @@
+{
+  "name": "sandbox-ionic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "305d87ed"
+}
